@@ -1,0 +1,1 @@
+{"n_estimators": 180, "min_samples_split": 10, "min_samples_leaf": 4, "max_features": "sqrt", "max_depth": null, "bootstrap": false, "_timestamp": 1653923111, "_runtime": 28, "_step": 1, "cv result": 0.778348909657321, "rmse": 0.496742636335202, "_wandb": {"runtime": 21}}

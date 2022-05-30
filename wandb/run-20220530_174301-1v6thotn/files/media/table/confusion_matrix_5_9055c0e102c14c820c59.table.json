@@ -1,0 +1,1 @@
+{"columns": ["Predicted", "Actual", "Count"], "data": [["diabetes", "diabetes", 120], ["diabetes", "not_diabetes", 31], ["not_diabetes", "diabetes", 25], ["not_diabetes", "not_diabetes", 55]]}

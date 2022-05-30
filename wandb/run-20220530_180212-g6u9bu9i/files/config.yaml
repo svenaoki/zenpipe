@@ -1,0 +1,62 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.17
+    framework: lightgbm
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.8.5
+    start_time: 1653926533
+    t:
+      1:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 6
+      - 8
+      - 53
+      - 55
+      2:
+      - 1
+      - 2
+      - 3
+      - 5
+      - 6
+      - 8
+      - 53
+      - 55
+      3:
+      - 2
+      - 13
+      - 15
+      4: 3.8.5
+      5: 0.12.17
+      8:
+      - 3
+      - 5
+      10:
+      - 5
+    viz:
+      class_proportions:
+        historyFieldSettings:
+          key: class_proportions
+          x-axis: _step
+        id: wandb/class_proportions/v1
+      feature_importances:
+        historyFieldSettings:
+          key: feature_importances
+          x-axis: _step
+        id: wandb/feature_importances/v1
+      learning_curve:
+        historyFieldSettings:
+          key: learning_curve
+          x-axis: _step
+        id: wandb/learning_curve/v1
+      roc:
+        historyFieldSettings:
+          key: roc
+          x-axis: _step
+        id: wandb/roc/v1

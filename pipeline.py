@@ -43,8 +43,3 @@ if __name__ == "__main__":
         print('No options chosen... Running training and analyzer pipeline')
         training_pipeline_run()
         analyze_pipeline_run()
-
-    print(
-        "Now run \n "
-        f"    mlflow ui --backend-store-uri {get_tracking_uri()}\n"
-        "To inspect your experiment runs within the mlflow UI.\n")

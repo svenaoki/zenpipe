@@ -1,0 +1,24 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.8.5",
+    "heartbeatAt": "2022-05-30T12:47:48.385634",
+    "startedAt": "2022-05-30T12:47:37.321123",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "all"
+    ],
+    "state": "running",
+    "program": "pipeline.py",
+    "codePath": "pipeline.py",
+    "git": {
+        "remote": "https://github.com/svenaoki/zenpipe.git",
+        "commit": "c9790af43d9d99aca94c2e88f7dfc493a310a178"
+    },
+    "email": "sven.schilke@ch.abb.com",
+    "root": "C:/Users/CHSVSCH4/Documents/Projects/2020/zenpipe",
+    "host": "CH-L-7286973",
+    "username": "CHSVSCH4",
+    "executable": "C:\\Users\\CHSVSCH4\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+}

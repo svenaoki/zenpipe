@@ -14,6 +14,6 @@ def train_pipeline(importer, split, train, evaluate):
         rmse: float
     """
     df = importer()
-    x_train, x_test, y_train, y_test = split(df)
-    model = train(x_train, y_train)
-    mse, rmse = evaluate(model, x_test, y_test)
+    X_train, X_test, y_train, y_test = split(df)
+    model = train(X_train, y_train)
+    mse, rmse = evaluate(model, X_test, y_test)

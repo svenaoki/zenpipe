@@ -165,6 +165,8 @@ ENV/
 env.bak/
 venv.bak/
 
+.vscode
+
 # Rope project settings
 .ropeproject
 
@@ -184,3 +186,4 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+

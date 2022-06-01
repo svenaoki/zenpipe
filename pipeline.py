@@ -29,14 +29,10 @@ def analyze_pipeline_run():
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("pipeline", type=str, choices=[
-                        "analyze", "train", "all"])
+                        "analyze", "train"])
     args = parser.parse_args()
 
     if args.pipeline == 'train':
         training_pipeline_run()
     elif args.pipeline == 'analyze':
-        analyze_pipeline_run()
-    else:
-        print('No options chosen... Running training and analyzer pipeline')
-        training_pipeline_run()
         analyze_pipeline_run()

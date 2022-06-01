@@ -5,26 +5,23 @@ from steps.train import train
 from steps.evaluate import evaluate
 from pipelines.train_pipeline import train_pipeline
 from pipelines.data_analysis_pipeline import data_analysis_pipeline
-from zenml.integrations.mlflow.mlflow_utils import get_tracking_uri
 from steps.visualizer import visualize_statistics, visualize_train_test_statistics
 
 
 def training_pipeline_run():
-    training_pipeline = train_pipeline(importer=importer(),
-                                       split=split(),
-                                       train=train(),
-                                       evaluate=evaluate())
-
-    training_pipeline.run()
+    train_pipeline(
+        importer=importer(),
+        split=split(),
+        train=train(),
+        evaluate=evaluate()).run()
 
 
 def analyze_pipeline_run():
     """Pipeline for analyzing data."""
-    analyze = data_analysis_pipeline(
+    data_analysis_pipeline(
         importer=importer(),
         split=split(),
-    )
-    analyze.run()
+    ).run()
     visualize_statistics()
     visualize_train_test_statistics()
 

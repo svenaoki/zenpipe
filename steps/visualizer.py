@@ -1,8 +1,6 @@
 import logging
 
-from zenml.integrations.facets.visualizers.facet_statistics_visualizer import (
-    FacetStatisticsVisualizer,
-)
+from zenml.integrations.facets.visualizers.facet_statistics_visualizer import FacetStatisticsVisualizer
 from zenml.repository import Repository
 
 

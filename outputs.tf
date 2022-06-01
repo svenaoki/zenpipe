@@ -1,4 +1,10 @@
-output "password" {
-  value = azurerm_postgresql_server.mlflowserver.administrator_login_password
+
+output "client_certificate" {
+  value     = azurerm_kubernetes_cluster.kc.kube_config.0.client_certificate
+  sensitive = true
+}
+
+output "kube_config" {
+  value     = azurerm_kubernetes_cluster.kc.kube_config_raw
   sensitive = true
 }

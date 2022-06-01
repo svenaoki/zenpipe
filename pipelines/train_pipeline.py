@@ -1,8 +1,12 @@
 from zenml.pipelines import pipeline
-from zenml.integrations.constants import WANDB, MLFLOW, SKLEARN
+from zenml.integrations.constants import FACETS, WANDB, SKLEARN
 
 
-@pipeline(enable_cache=False, required_integrations=[WANDB, SKLEARN])
+@pipeline(
+    enable_cache=False,
+    required_integrations=[FACETS, WANDB, SKLEARN],
+    requirements="requirements.txt"
+)
 def train_pipeline(importer, split, train, evaluate):
     """
     Args:

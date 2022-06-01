@@ -1,12 +1,9 @@
-import mlflow
 import pandas as pd
 import numpy as np
 from zenml.steps import Output, step
 from sklearn.metrics import mean_squared_error
 from sklearn.base import ClassifierMixin
 #from zenml.integrations.mlflow.mlflow_step_decorator import enable_mlflow
-from zenml.integrations.wandb.wandb_step_decorator import enable_wandb
-import wandb
 # @enable_mlflow
 
 

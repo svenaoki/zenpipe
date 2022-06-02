@@ -17,7 +17,7 @@ class IngestData:
 def importer() -> Output(df=pd.DataFrame):
     try:
         ingest_data = IngestData()
-        df = ingest_data.get_data()
+        df = ingest_data.import_data()
         return df
     except Exception as e:
         logging.error(e)

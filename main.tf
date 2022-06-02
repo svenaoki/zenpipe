@@ -1,6 +1,6 @@
 // deploy resource group
 resource "azurerm_resource_group" "rg" {
-  name     = "resourceGroup"
+  name     = "${random_pet.name.id}rg"
   location = "West Europe"
 }
 provider "azurerm" {
@@ -29,10 +29,10 @@ resource "azurerm_storage_container" "sc" {
 
 // kubernetes server
 resource "azurerm_kubernetes_cluster" "kc" {
-  name                = "${random_pet.name.id}aks1"
+  name                = "${random_pet.name.id}aks"
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
-  dns_prefix          = "${random_pet.name.id}ks1"
+  dns_prefix          = "${random_pet.name.id}ks"
 
   default_node_pool {
     name       = "default"
